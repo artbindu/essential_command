@@ -1,5 +1,4 @@
-
-# About
+# Home
 </hr>
 
 **Page Editing Help: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)**<br>

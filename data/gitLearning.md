@@ -1,5 +1,5 @@
-# Learning git
- 	 	  	
+# Git Learning
+</hr> 	  	
 
 ## Git Popular Command ##
 
