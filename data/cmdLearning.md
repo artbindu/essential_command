@@ -31,7 +31,7 @@ Command | description
 `Shutdown /s` | Shutdown computer 
 `Shutdown /r`| Restart computer 	
 `Shutdown /l` Or `Windows + r + logoff`| Logoff computer 	
-
 `Shutdown /a`|Abort the shutdown process before the timeout;
-Shutdown using timer 	Shutdown -s -t <seconds> 
-Shutdown and then researt using timer 	 shutdown -r -t <seconds> 
+`Shutdown -s -t <seconds>` | Shutdown using timer 	
+`shutdown -r -t <seconds> ` | Shutdown and then researt using timer
+ 
