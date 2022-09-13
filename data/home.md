@@ -1,5 +1,9 @@
 # Home
 </hr>
 
-**Page Editing Help: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)**<br>
+## This application used to help Keyboard shortcuts and Basic CMD commands for different OS.
+
+</br></br></br></br></br></br></br></br></br>
+
 **Editor: [Biswasindhu Mandal](https://github.com/artbindu)**<br>
+**Page Editing Help: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)**<br>
