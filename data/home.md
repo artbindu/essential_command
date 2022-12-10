@@ -6,4 +6,3 @@
 </br></br></br></br></br></br></br></br></br>
 
 **Editor: [Biswasindhu Mandal](https://github.com/artbindu)**<br>
-**Help: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)**<br>
