@@ -22,7 +22,13 @@ Command | description
 ``|
 ``|
 ``|
-**`3. WiFi/User Details `**|
+**`3. File or Folder password protection`** |- worked for NTFS file system |
+`cacls <dir_name> /P everyone:n` | Password protected directory for everyone
+`cacls <dir_name> /P everyone:f` | Open for all, not password protected
+`cacls <file_path>/<file_name> /P everyone:n` | Password protected file for everyone
+`cacls <file_path>/<file_name> /P everyone:f` | Open for all, not password protected
+``|
+**`4. WiFi/User Details `**|
 `netsh wlan show profiles`| Show Profiles
 `netsh wlan show profile <Profile_Name> key=clear`| User/Wifi Password (Security settings -> Key Content)
 ``|
