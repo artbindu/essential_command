@@ -24,6 +24,7 @@
 `ping <ip>` <br> `ping <host>.<domain>` | check connect with that `host`
 `ping <ip> -t` <br> `ping <host.domain> -t` | continuously checking connection with that host
 `tracert <ip>` <br> `tracert <host>.<domain>` | traceroute ip<br> traceroute host
+`ipconfig/all` | Ipconfig shows IP address, Subnet Mask, and Default gateway for all adapters. Ipconfig /all shows the description of each network connection along with additional information such as your physical (MAC) address, DHCP connections, Lease times, as well as in-depth IPv6 information.
 |
 **[wmic](https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmic) : `Windows Management Interface Command details`**| `returns information about the system`
 `wmic /?`|wmic
