@@ -25,7 +25,6 @@
 
 <body>
 
-
   <div class="fixed-div">
     <ul id="myList">
       <li class="active"><a href="#windows">
@@ -135,7 +134,7 @@
     });
 
     function showData(activeOption) {
-      showHeaderMessage(activeOption.toLowerCase());
+      showHeaderMessage(activeOption);
       var showData = document.querySelectorAll('#showData div');
       showData.forEach(function (item) {
         item.style.display = item.className.toLowerCase() === activeOption.toLowerCase() ? "block" : "none";
@@ -143,7 +142,7 @@
     }
 
     function showHeaderMessage(msg) {
-      msg = msg.replace(/\-/g, '_');
+      msg = msg ? msg.toLowerCase().replace(/\-/g, '_') : 'about';
       document.getElementsByClassName("msg")[0].innerHTML = msgData[msg];
     }
   </script>
