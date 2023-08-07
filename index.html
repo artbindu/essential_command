@@ -1,64 +1,151 @@
 <!DOCTYPE html>
 <html lang="eng">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Edit your site info here -->
-    <title>📖CMD📖Learning📖</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="canonical" href="https://zerodevx.github.io/zero-md/">
 
-    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.2.10/webcomponents-loader.min.js"></script>
-    <script type="module" src="./src/index.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Edit your site info here -->
+  <title>📖CMD📖Learning📖</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="canonical" href="https://zerodevx.github.io/zero-md/">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66946548-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-66946548-3');
-    </script>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <!-- Edit your header title here -->
-    <header class="header"><h3>Essential Command</h3></header>
+  <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2.2.10/webcomponents-loader.min.js"></script>
+  <script type="module" src="./src/index.js"></script>
 
-    <ul>
-      <li><a href="">
-          <img align="center" src="https://artbindu.github.io/biswasindhu_cv.github.io/favicon.ico" height="20px"
-            style="padding:5px;">
-          Home
-        </a></li>
-      <li><a href="./src/wincmd.html">
-          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows" />
-          Windows CMD
-        </a></li>
-      <li><a href="./src/itcmd.html">
-          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows/sky" />
-          Windows IT
-        </a></li>
-      <li><a href="./src/linuxcmd.html">
-          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/linux" />
-          Linux CMD
-        </a></li>
-      <li><a href="./src/maccmd.html">
-          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/apple/white" />
-          Mac CMD
-        </a></li>
-      <li><a href="./src/gitcmd.html">
-          <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/git/red" />
-          git Command
-        </a></li>
-      <li><a href="./src/adbcmd.html">
-          <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/android/green" />
-          adb Command
-        </a></li>
-    </ul>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66946548-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-66946548-3');
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <!-- Edit your Markdown URL source file here -->
-    <zero-md class="app" src="./data/home.md"></zero-md>    
+<body>
 
-  </body>
+  <ul id="myList">
+    <li class="active">
+      <a href="#windows">
+        <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows" />
+        Windows
+      </a>
+    </li>
+    <li>
+      <a href="#windows-it">
+        <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows/sky" />
+        Windows-IT
+      </a>
+    </li>
+    <li>
+      <a href="#linux">
+        <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/linux" />
+        Linux
+      </a>
+    </li>
+    <li>
+      <a href="#macos">
+        <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/apple/white" />
+        MacOs
+      </a>
+    </li>
+    <li>
+      <a href="#git">
+        <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/git/red" />
+        Git
+      </a>
+    </li>
+    <li>
+      <a href="#adb">
+        <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/android/green" />
+        Adb
+      </a>
+    </li>
+
+    <!-- <li class="active"><a href="#home">home</a></li>
+        <li><a href="#mac">mac</a></li>
+        <li><a href="#windows">windows</a></li>
+        <li><a href="#linux">linux</a></li> -->
+
+    <!-- <li class="dropdown"><a href="#contact" class="dropbtn">Games</a>
+               <div class="dropdown-content">
+                <a href="#">PUBG</a>
+                <a href="#">Fortnite</a>
+                <a href="#">PUBG Mobile</a>
+              </div>
+              </li> -->
+
+    <!-- <li style="float:right"><a href="#about">About</a></li> -->
+    <li style="float:right">
+      <a href="#about">
+        <img align="center" src="https://artbindu.github.io/biswasindhu_cv.github.io/favicon.ico" height="20px"
+          style="padding:5px;">
+        About
+      </a>
+    </li>
+  </ul>
+
+
+
+  <div id="showData">
+    <div class="windows">
+      <zero-md class="app" src="./data/cmdLearning.md"></zero-md>
+    </div>
+    <div class="macos">
+      <zero-md class="app" src="./data/macLearning.md"></zero-md>
+    </div>
+    <div class="linux">
+      <zero-md class="app" src="./data/linuxLearning.md"></zero-md>
+    </div>
+    <div class="windows-it">
+      <zero-md class="app" src="./data/cmdIT.md"></zero-md>
+    </div>
+    <div class="git">
+      <zero-md class="app" src="./data/gitLearning.md"></zero-md>
+    </div>
+    <div class="adb">
+      <zero-md class="app" src="./data/adbLearning.md"></zero-md>
+    </div>
+    <div class="about">
+      <zero-md class="app" src="./data/about.md"></zero-md>
+    </div>
+  </div>
+
+  <script>
+    var listItems = document.querySelectorAll('#myList li');
+    var activeOption = listItems[0].textContent ? listItems[0].textContent.replace(/\s+/g, '') : '';;
+    showData(activeOption);
+
+    listItems.forEach(function (item) {
+      item.addEventListener('click', function () {
+        // Remove active class from all li elements
+        listItems.forEach(function (li) {
+          li.classList.remove('active');
+        });
+
+        // Add active class to the clicked li element
+        this.classList.add('active');
+
+        // Get the text of the active li element
+        activeOption = this.textContent ? this.textContent.replace(/\s+/g, '') : '';
+        console.log('Active option: ' + activeOption);
+        showData(activeOption);
+      });
+    });
+
+    function showData(activeOption) {
+      var showData = document.querySelectorAll('#showData div');
+      showData.forEach(function (item) {
+        if(item.className.toLowerCase() === activeOption.toLowerCase()) {
+          item.style.display = "block";
+          console.log(`showData: ${item.className.toLowerCase()} - ${activeOption.toLowerCase()}`);
+        } else {
+          item.style.display =  "none";
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>
