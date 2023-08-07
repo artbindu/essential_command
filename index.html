@@ -23,42 +23,16 @@
   </head>
   <body>
     <!-- Edit your header title here -->
-    <header class="header"><h3>Essential Command</h3></header>
+    <header class="header">
+      <h3>Essential Command</h3>
+    </header>
+    <div w3-include-html="./src/templates/header_main.html"></div>
 
-    <ul>
-      <li><a href="">
-          <img align="center" src="https://artbindu.github.io/biswasindhu_cv.github.io/favicon.ico" height="20px"
-            style="padding:5px;">
-          Home
-        </a></li>
-      <li><a href="./src/wincmd.html">
-          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows" />
-          Windows CMD
-        </a></li>
-      <li><a href="./src/itcmd.html">
-          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows/sky" />
-          Windows IT
-        </a></li>
-      <li><a href="./src/linuxcmd.html">
-          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/linux" />
-          Linux CMD
-        </a></li>
-      <li><a href="./src/maccmd.html">
-          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/apple/white" />
-          Mac CMD
-        </a></li>
-      <li><a href="./src/gitcmd.html">
-          <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/git/red" />
-          git Command
-        </a></li>
-      <li><a href="./src/adbcmd.html">
-          <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/android/green" />
-          adb Command
-        </a></li>
-    </ul>
-
-    <!-- Edit your Markdown URL source file here -->
-    <zero-md class="app" src="./data/home.md"></zero-md>    
+    <div class="main-body">
+      <!-- Edit your Markdown URL source file here -->
+      <zero-md class="app" src="./data/home.md"></zero-md>
+    </div>
+  
 
   </body>
 </html>
