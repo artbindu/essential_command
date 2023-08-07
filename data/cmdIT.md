@@ -1,8 +1,5 @@
-# IT related commands
-</hr>
- 	 	  	
+<!-- # IT related commands -->
 
-## Popular Command ##
 
 [Command](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) | description
 ------- | --------

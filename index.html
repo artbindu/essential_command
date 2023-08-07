@@ -24,66 +24,62 @@
 </head>
 
 <body>
-  <ul id="myList">
-    <li class="active">
-      <a href="#windows">
-        <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows" />
-        Windows
-      </a>
-    </li>
-    <li>
-      <a href="#windows-it">
-        <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows/sky" />
-        Windows-IT
-      </a>
-    </li>
-    <li>
-      <a href="#linux">
-        <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/linux" />
-        Linux
-      </a>
-    </li>
-    <li>
-      <a href="#macos">
-        <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/apple/white" />
-        MacOs
-      </a>
-    </li>
-    <li>
-      <a href="#git">
-        <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/git/red" />
-        Git
-      </a>
-    </li>
-    <li>
-      <a href="#adb">
-        <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/android/green" />
-        Adb
-      </a>
-    </li>
-    <!-- <li class="active"><a href="#home">home</a></li>
-          <li><a href="#mac">mac</a></li>
-          <li><a href="#windows">windows</a></li>
-          <li><a href="#linux">linux</a></li>
-    
-          <li class="dropdown"><a href="#contact" class="dropbtn">Games</a>
-            <div class="dropdown-content">
-              <a href="#">Item1</a>
-              <a href="#">Item2</a>
-              <a href="#">Item3</a>
-            </div>
-          </li>
-          <li style="float:right"><a href="#about">About</a></li> -->
-    <li style="float:right">
-      <a href="#about">
-        <img align="center" src="https://artbindu.github.io/biswasindhu_cv.github.io/favicon.ico" height="20px"
-          style="padding:5px;">
-        About
-      </a>
-    </li>
-  </ul>
 
-  <div id="showData">
+
+  <div class="fixed-div">
+    <ul id="myList">
+      <li class="active"><a href="#windows">
+          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows" />
+          Windows</a>
+      </li>
+      <li><a href="#windows-it">
+          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows/sky" />
+          Windows-IT</a>
+      </li>
+      <li><a href="#linux">
+          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/linux" />
+          Linux</a>
+      </li>
+      <li><a href="#macos">
+          <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/apple/white" />
+          MacOs</a>
+      </li>
+      <li><a href="#git">
+          <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/git/red" />
+          Git</a>
+      </li>
+      <li><a href="#adb">
+          <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/android/green" />
+          Adb</a>
+      </li>
+      <!-- <li class="active"><a href="#home">home</a></li>
+            <li><a href="#mac">mac</a></li>
+            <li><a href="#windows">windows</a></li>
+            <li><a href="#linux">linux</a></li>
+      
+            <li class="dropdown"><a href="#contact" class="dropbtn">Games</a>
+              <div class="dropdown-content">
+                <a href="#">Item1</a>
+                <a href="#">Item2</a>
+                <a href="#">Item3</a>
+              </div>
+            </li>
+            <li style="float:right"><a href="#about">About</a></li> -->
+      <li style="float:right"><a href="#about">
+          <img align="center" src="https://artbindu.github.io/biswasindhu_cv.github.io/favicon.ico" height="25px"
+            style="padding:5px;">
+          About</a>
+      </li>
+    </ul>
+    <header class="page-header">
+      <h1><u>
+          <div class="msg">Windows Popular Command</div>
+        </u></h1>
+    </header>
+    <!-- Your fixed div content goes here -->
+  </div>
+
+  <div class="content" id="showData">
     <div class="windows">
       <zero-md class="app" src="./data/cmdLearning.md"></zero-md>
     </div>
@@ -108,6 +104,15 @@
   </div>
 
   <script>
+    var msgData = {
+      windows: 'Windows CMD Commands',
+      linux: 'Linux Terminal Commands',
+      macos: 'MacOs Terminal Commands',
+      windows_it: 'Windows IT CMD Commands',
+      git: 'Git Basic Commands',
+      adb: 'ADB Basic Commands',
+      about: "About"
+    };
     var listItems = document.querySelectorAll('#myList li');
     var activeOption = listItems[0].textContent ? listItems[0].textContent.replace(/\s+/g, '') : '';;
     showData(activeOption);
@@ -130,10 +135,16 @@
     });
 
     function showData(activeOption) {
+      showHeaderMessage(activeOption.toLowerCase());
       var showData = document.querySelectorAll('#showData div');
       showData.forEach(function (item) {
         item.style.display = item.className.toLowerCase() === activeOption.toLowerCase() ? "block" : "none";
       });
+    }
+
+    function showHeaderMessage(msg) {
+      msg = msg.replace(/\-/g, '_');
+      document.getElementsByClassName("msg")[0].innerHTML = msgData[msg];
     }
   </script>
 </body>

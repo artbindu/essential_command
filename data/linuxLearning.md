@@ -1,8 +1,6 @@
-# Linux Terminal related commands
-</hr>
- 	 	  	
+<!-- # Linux Terminal related commands -->
 
-## Popular Command ##
+
 
 [Command]() | description
 ------- | --------
