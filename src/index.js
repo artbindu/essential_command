@@ -149,7 +149,12 @@
 
     _buildStyles() {
       return new Promise(resolve => {
-        let start = '<style class="markdown-style">:host{display:block;position:relative;contain:content;}';
+        /** 
+         * Issue: https://github.com/artbindu/EssentialCmd.github.io/issues/1
+         * position:relative;contain:content;
+         * Above configuration float the .md files data on page header
+         **/
+        let start = '<style class="markdown-style">:host{display:block;position:inherit;contain:inherit;}';
         let end = '</style>';
         // First try reading from light DOM template
         let tpl = this.querySelector('template') && this.querySelector('template').content.querySelector('style') || false;
