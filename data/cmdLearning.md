@@ -1,7 +1,4 @@
-# Windows Commands
-</hr>	  	
-
-## Command Popular Command ##
+<!-- Windows Commands  -->
 
 Command | description
 ------- | --------

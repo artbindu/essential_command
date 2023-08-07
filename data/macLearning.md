@@ -1,8 +1,6 @@
-# Max CMD related commands
-</hr>
- 	 	  	
+<!-- # Max CMD related commands -->
 
-## Popular Command ##
+
 
 [Command]() | description
 ------- | --------

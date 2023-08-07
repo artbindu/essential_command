@@ -148,9 +148,13 @@
     }
 
     _buildStyles() {
-      this.includeHTML();
       return new Promise(resolve => {
-        let start = '<style class="markdown-style">:host{display:block;position:relative;contain:content;}';
+        /** 
+         * Issue: https://github.com/artbindu/EssentialCmd.github.io/issues/1
+         * position:relative;contain:content;
+         * Above configuration float the .md files data on page header
+         **/
+        let start = '<style class="markdown-style">:host{display:block;position:inherit;contain:inherit;}';
         let end = '</style>';
         // First try reading from light DOM template
         let tpl = this.querySelector('template') && this.querySelector('template').content.querySelector('style') || false;
@@ -196,38 +200,6 @@
           this._stampDom(data[0] + data[1]);
           this._fire('zero-md-rendered');
         });
-    }
-
-
-    /** 
-     * This is outside files 
-     **/
-    includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("w3-include-html");
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            if (this.readyState == 4) {
-              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("w3-include-html");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
-        }
-      }
     }
   });
 }(window, document));
