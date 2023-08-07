@@ -29,15 +29,19 @@
 
 <body>
     <!-- Edit your header title here -->
-    <header class="header-main">
-        <h3>Essential Command</h3>
+    <header>
+        <div class="header-main">
+            <h3>Essential Command</h3>
+        </div>
+        <div class="header-sub">
+            <div w3-include-html="./templates/header.html"></div>
+        </div>
     </header>
-    <div w3-include-html="./templates/header.html"></div>
+
 
     <div class="main-body">
         <zero-md class="app" src="../data/cmdLearning.md"></zero-md>
     </div>
-    
 </body>
 
 </html>

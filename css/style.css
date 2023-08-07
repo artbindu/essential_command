@@ -13,7 +13,7 @@
 
 .header-sub {
   /* font-family: sans-serif; */
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   /* position: fixed; */
   width: 100%;
@@ -29,7 +29,7 @@ body {
   min-width: 200px;
   max-width: 980px;
   margin: 56px auto 0 auto;
-  padding: 45px;
+  padding: 40px;
 }
 
 @media (max-width: 767px) {
@@ -58,7 +58,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 12px;
   text-decoration: none;
 }
 

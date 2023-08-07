@@ -23,13 +23,15 @@
   </head>
   <body>
     <!-- Edit your header title here -->
-    <header class="header-main">
-      <h3>Essential Command</h3>
+    <header>
+      <div class="header-main">
+        <h3>Essential Command</h3>
+      </div>
+      <div class="header-sub">
+        <div w3-include-html="./src/templates/header_main.html"></div>
+      </div>
     </header>
-    <header class="header-sub">
-      <div w3-include-html="./src/templates/header_main.html"></div>
-    </header>
-
+  
     <div class="main-body">
       <!-- Edit your Markdown URL source file here -->
       <zero-md class="app" src="./data/home.md"></zero-md>
