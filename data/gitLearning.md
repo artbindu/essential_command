@@ -5,6 +5,7 @@ Command | description
 ------- | --------
 **`1. download code from cloude`** | 
 `git clone <clone_url>` | download code from cloude using git
+`git clone <clone_url> <new_repo_name>`| download git repo with custom name
 **`2. Check your branch Name`** |
 `git branch` | check you local branches name
 `git branch -r` | check you local & global branches name
