@@ -4,35 +4,35 @@
 Command | description
 ------- | --------
 **`1. download code from cloude`** | 
-git clone `<clone_url>` | download code from cloude using git
+`git clone <clone_url>` | download code from cloude using git
 **`2. Check your branch Name`** |
-git branch | check you local branches name
-git branch -r | check you local & global branches name
+`git branch` | check you local branches name
+`git branch -r` | check you local & global branches name
 **`3. switch to another branch`** | 
-git checkout `<branch_name>` | switch to another branch	<br> if it's avalible into you machine 	 
-git checkout `<commit_id>` -b `<branch_name>` | create a new branch with a specific commit id and switch that branch<br>do it after clone from `master` branch
+`git checkout <branch_name>` | switch to another branch	<br> if it's avalible into you machine 	 
+`git checkout <commit_id> -b <branch_name>` | create a new branch with a specific commit id and switch that branch<br>do it after clone from `master` branch
 **`4. Git code merge at cloude`** | 
-git add . | add you changes	 	 
-git commit -m `"<enter_message>"` | add you commit message 	 	 
-git push origin master | push at your original branch
+`git add .`` | add you changes	 	 
+`git commit -m "<enter_message>"` | add you commit message 	 	 
+`git push origin master` | push at your original branch
 **`5. Rename & Delete you branch`** | 
-git branch -m `<new_branch_name>` | rename a branch<br>Stay outside of this branch
-git branch -d `<delete_branch_name>` <br>or<br> git branch -D `<delete_branch_name>` | delete local branch<br>Stay outside of this branch
+`git branch -m <new_branch_name>` | rename a branch<br>Stay outside of this branch
+`git branch -d <delete_branch_name>` <br>or<br> git branch -D `<delete_branch_name>` | delete local branch<br>Stay outside of this branch
 **`6. Reset or Clean you directory`** | 
-git reset | discard local change 	 
-git reset --hard | discard everything permanently<br>not delete new creating file
-git clean -dfx | clean you directory like cloude branch<br>Please go to master branch & do it
+`git reset` | discard local change 	 
+`git reset --hard` | discard everything permanently<br>not delete new creating file
+`git clean -dfx` | clean you directory like cloude branch<br>Please go to master branch & do it
 **`7. Reset a single file`**|
-git checkout @ -- <file_name>.<ext_name> | reset changes with in file <file_name.ext_name>
+`git checkout @ -- <file_name>.<ext_name>` | reset changes with in file <file_name.ext_name>
 **`8. git configuration`** | 
-git config --list | All git configuration including userid & password
-git config --global user.name `"<new User name>"` | Add new git configuration list attributes 
+`git config --list` | All git configuration including userid & password
+`git config --global user.name "<new User name>"` | Add new git configuration list attributes 
 **`9. Patch Creating & apply`** | 
-git diff | check all of your local chages<br>If you add new Folder then don't show here
-git diff --name-only | show list of your local changes file name
-git diff > `<patch_fileName>.patch` | store difference into a folder
-git diff `<fileName_including_path>` > `<patch_fileName>.patch` | create patch file on a specific changes file<br>first run `git diff --name-only` and copy `fileName_including_path`
-git apply `<patch_fileName>.patch` <br> git apply `<patch_directory_path>/<patch_file>.patch` | apply patch file
+`git diff` | check all of your local chages<br>If you add new Folder then don't show here
+`git diff --name-only` | show list of your local changes file name
+`git diff > <patch_fileName>.patch` | store difference into a folder
+`git diff <fileName_including_path>` > `<patch_fileName>.patch` | create patch file on a specific changes file<br>first run `git diff --name-only` and copy `fileName_including_path`
+`git apply <patch_fileName>.patch` <br> `git apply <patch_directory_path>/<patch_file>.patch` | apply patch file
 	 	 
 	 	 
 
