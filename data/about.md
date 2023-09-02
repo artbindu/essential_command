@@ -9,4 +9,4 @@
 </div>
 </br></br></br></br></br>
 
-**Editor: [Biswasindhu Mandal](https://github.com/artbindu)**<br>
+**Editor:  [<img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/> Biswasindhu Mandal](https://github.com/artbindu)**<br>
