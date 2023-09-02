@@ -2,6 +2,9 @@
 
 
 [Command](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) | description
+
+https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8
+https://technastic.com/adb-shell-commands-list/
 ------- | --------
 `adb devices` | see list of connected devices through adb
 `adb connect <ip>:<port>` | connect devices through ip
@@ -18,3 +21,6 @@
 `pm list packages \| grep <OEM/Carrier/App Name>` | adb show app list under a specific packages
 `adb shell input text "<input_text>"` | Input text from remote device
 `adb remount`| put `/system` partition in writable mode. By default `/system` is only readable. It could only be done on rooted device.
+
+
+<!-- https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8 -->
