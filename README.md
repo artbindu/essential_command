@@ -6,4 +6,4 @@ Command line code for windows / mac / linux
 <br><br>
 
 # Help
-[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)**<br>
+[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)<br>
