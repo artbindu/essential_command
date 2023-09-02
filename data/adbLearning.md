@@ -2,9 +2,6 @@
 
 
 [Command](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) | description
-
-https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8
-https://technastic.com/adb-shell-commands-list/
 ------- | --------
 `adb devices` | see list of connected devices through adb
 `adb connect <ip>:<port>` | connect devices through ip
