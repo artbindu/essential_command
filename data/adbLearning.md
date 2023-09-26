@@ -25,4 +25,5 @@ Up-Down Volume through ADB |
 `adb shell media volume --show  --set <volume value>`| Set Volume with in about volume range
 
 
+
 <!-- https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8 -->
