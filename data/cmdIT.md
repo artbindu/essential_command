@@ -32,6 +32,8 @@
 `wmic nic get macaddress` | MAC address
 `wmic baseboard get product` | baseboard product
 `wmic COMPUTERSYSTEM get TotalPhysicalMemory` | RAM Size
+`wmic memorychip list full`| View all the memory details
+`wmic memorychip get manufacturer, serialnumber, capacity, speed, memorytype`| Get specific RAM Info
 `wmic process get workingsetsize,commandline` | Print All Running Application, Programmes, and Their RAM/Memory Usage
 `wmic partition get name,size,type` | Disk Partition Name, Size, and Type
 `wmic service list brief` | List Services

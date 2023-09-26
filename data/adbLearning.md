@@ -18,8 +18,11 @@
 `pm list packages \| grep <OEM/Carrier/App Name>` | adb show app list under a specific packages
 `adb shell input text "<input_text>"` | Input text from remote device
 `adb remount`| put `/system` partition in writable mode. By default `/system` is only readable. It could only be done on rooted device.
-Media |
+Media Configuration |
 `adb shell media` | Get ADB Media command info
 Up-Down Volume through ADB |
 `adb shell media volume --get`| Get Current volume Info<br>It will show you current volume value & actual volume range like: [0:10]
 `adb shell media volume --show  --set <volume value>`| Set Volume with in about volume range
+
+
+<!-- https://gist.github.com/Pulimet/5013acf2cd5b28e55036c82c91bd56d8 -->
