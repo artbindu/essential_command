@@ -26,7 +26,7 @@
 <body>
   <div class="fixed-div">
     <ul id="myList">
-      <li class="active"><a href="#windows">
+      <li><a href="#windows">
           <img align="center" width="15px" style="padding:5px;" src="https://cdn.simpleicons.org/windows" />
           Windows</a>
       </li>
@@ -111,9 +111,28 @@
       adb: 'ADB Basic Commands',
       about: "About"
     };
-    var listItems = document.querySelectorAll('#myList li');
-    var activeOption = listItems[0].textContent ? listItems[0].textContent.replace(/\s+/g, '') : '';;
-    showData(activeOption);
+
+        // Show default active option after refresh/first-reload
+        var listItems = document.querySelectorAll('#myList li');
+        var cUrl = window.location.href;
+        var urlKey = cUrl.match(/(?<=\#)[a-z\-]+/gi);
+        if (urlKey) {
+          listItems.forEach((ele, index) => {
+            if (ele.textContent.match(/[a-z\-]+/gi).toString().toLowerCase() === urlKey.toString().toLowerCase()) {
+              var activeOption = ele.textContent ? ele.textContent.replace(/\s+/g, '') : '';
+              console.log('Active option: [Default] ' + activeOption);
+              listItems[index].classList.add('active')
+              showData(activeOption);
+              return;
+            }
+          });
+        } else {
+          var activeOption = listItems[0].textContent ? listItems[0].textContent.replace(/\s+/g, '') : '';
+          console.log('Active option: [Default] ' + activeOption);
+          listItems[0].classList.add('active')
+          showData(activeOption);
+        }
+      
 
     listItems.forEach(function (item) {
       item.addEventListener('click', function () {
@@ -127,7 +146,7 @@
 
         // Get the text of the active li element
         activeOption = this.textContent ? this.textContent.replace(/\s+/g, '') : '';
-        console.log('Active option: ' + activeOption);
+        console.log('Active option: [onClick] ' + activeOption);
         showData(activeOption);
       });
     });
