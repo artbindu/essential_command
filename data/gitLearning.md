@@ -13,7 +13,7 @@ Command | description
 `git checkout <branch_name>` | switch to another branch	<br> if it's available into you machine 	 
 `git checkout <commit_id> -b <branch_name>` | create a new branch with a specific commit id and switch that branch<br>do it after clone from `master` branch
 **`4. Git code merge at cloud`** | 
-`git add .`` | add you changes	 	 
+`git add .` | add you changes	 	 
 `git commit -m "<enter_message>"` | add you commit message 	 	 
 `git push origin master` | push at your original branch
 **`5. Rename & Delete you branch`** | 

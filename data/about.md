@@ -9,5 +9,4 @@
 </div>
 </br></br></br></br></br>
 
-**Editor:  [<img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/> Biswasindhu Mandal](https://github.com/artbindu)**<br>
-          **[Subhadeep Giri](https://github.com/subhadeepgiri79)**<br>
+**Editor:  [<img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/> Biswasindhu Mandal](https://github.com/artbindu)** &nbsp; & &nbsp; [<img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/> Subhadeep Giri](https://github.com/SubhadeepGiri)<br>
