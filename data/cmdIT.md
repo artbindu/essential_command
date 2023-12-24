@@ -1,7 +1,7 @@
 <!-- # IT related commands -->
 
 
-[Command](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) | description
+[Command](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) | Description
 ------- | --------
 **`1. Create/Delete User & Activted Administrator Account`** | 
 `net user` | see all user list
@@ -29,11 +29,9 @@
 `WMIC CSPRODUCT GET NAME` | Product Name
 `wmic computersystem get name` | User Name
 `WMIC BIOS GET SERIALNUMBER` | BIOS serial number
-`wmic nic get macaddress` | MAC address
+`wmic nic get macaddress` or 2nd cmd `getmac` | MAC address
 `wmic baseboard get product` | baseboard product
 `wmic COMPUTERSYSTEM get TotalPhysicalMemory` | RAM Size
-`wmic memorychip list full`| View all the memory details
-`wmic memorychip get manufacturer, serialnumber, capacity, speed, memorytype`| Get specific RAM Info
 `wmic process get workingsetsize,commandline` | Print All Running Application, Programmes, and Their RAM/Memory Usage
 `wmic partition get name,size,type` | Disk Partition Name, Size, and Type
 `wmic service list brief` | List Services
@@ -44,5 +42,4 @@
 `wmic diskdrive get model,name,size` | List Disk Drives (HDD/SDD)
 `wmic os list brief` | List Brief Operating System Information
 `wmic path SoftwareLicensingService get OA3xOriginalProductKey` | System product key
-
 

@@ -1,7 +1,6 @@
 <!-- # ADB related commands -->
 
-
-[Command](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) | description
+[Command](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) | Description
 ------- | --------
 `adb devices` | see list of connected devices through adb
 `adb connect <ip>:<port>` | connect devices through ip

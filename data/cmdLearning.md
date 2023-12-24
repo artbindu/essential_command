@@ -1,6 +1,6 @@
 <!-- Windows Commands  -->
 
-Command | description
+Command | Description
 ------- | --------
 **`1. Directory:: create/delete/copy/move`** | 
 `mkdir <dir_name>` or<br>`mkdir <path>\<dir_name>` | create directory
