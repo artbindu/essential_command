@@ -9,13 +9,13 @@
 `Xcopy <dir_name> <path> /E/H/C/I` or<br>`Xcopy <path>\<dir_name> <path> /E/H/C/I`| Copy Directory<br>`/E`–Copy subdirectories, including any empty ones.<br>`/H`-Copy files with hidden and system file attributes<br>`/C`-Continue copying even if an error occurs.<br>`/I`-If in doubt, always assume the destination is a folder
 |  
 **`2. System Info`** |
-`systeminfo` | Get SystemInformation
-`whoami` | see current user id
-`win + r` + `dxdiag` | get all of your systeminfo
-`powercfg energy` | system full details including issues (.html file)
-`powercfg /batteryreport` | battery info (.html file)
-`perfmon /report` | system report
 `ipconfig` | ipdetails [IPv4 Address / Default Gateway]
+`win + r` + `dxdiag` | get all of your systeminfo
+`whoami` | see current user id
+`perfmon /report` | system report
+`powercfg /batteryreport` | battery info (.html file)
+`powercfg energy` | system full details including issues (.html file)
+`systeminfo` | Get SystemInformation
 | 
 **`3. ping related config`**|
 `ping <ip>` <br> `ping <host>.<domain>` | check connect with that `host`
@@ -25,21 +25,22 @@
 |
 **[wmic](https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmic) : `Windows Management Interface Command details`**| `returns information about the system`
 `wmic /?`|wmic
-`wmic ComputerSystem GET Model` | Model Name
-`WMIC CSPRODUCT GET NAME` | Product Name
-`wmic computersystem get name` | User Name
-`WMIC BIOS GET SERIALNUMBER` | BIOS serial number
-`wmic nic get macaddress` or 2nd cmd `getmac` | MAC address
 `wmic baseboard get product` | baseboard product
+`WMIC BIOS GET SERIALNUMBER` | BIOS serial number
+`wmic ComputerSystem GET Model` | Model Name
+`wmic ComputerSystem get name` | User Name
 `wmic COMPUTERSYSTEM get TotalPhysicalMemory` | RAM Size
-`wmic process get workingsetsize,commandline` | Print All Running Application, Programmes, and Their RAM/Memory Usage
+`WMIC CSPRODUCT GET NAME` | Product Name
+`wmic diskdrive get model,name,size` | List Disk Drives (HDD/SDD)
+`wmic memcache list brief` | Get Cache Memory Information
+`wmic nic get macaddress` or 2nd cmd `getmac` | MAC address
+`wmic os list brief` | List Brief Operating System Information
 `wmic partition get name,size,type` | Disk Partition Name, Size, and Type
-`wmic service list brief` | List Services
+`wmic path SoftwareLicensingService get OA3xOriginalProductKey` | System product key
+`wmic process get workingsetsize,commandline` | Print All Running Application, Programmes, and Their RAM/Memory Usage
 `wmic process list brief` | List Process
+`wmic process list brief > process.txt` | Write WMIC Output Into A File
 `wmic process where name="chrome.exe" call terminate` | Kill Given Process
 `wmic startup list brief` | List Startup Applications
-`wmic process list brief > process.txt` | Write WMIC Output Into A File
-`wmic diskdrive get model,name,size` | List Disk Drives (HDD/SDD)
-`wmic os list brief` | List Brief Operating System Information
-`wmic path SoftwareLicensingService get OA3xOriginalProductKey` | System product key
+`wmic service list brief` | List Services
 
