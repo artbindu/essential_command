@@ -14,6 +14,6 @@
 </div>
 </br></br></br></br></br>
 
-**Editor:**  **[<img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/>](https://github.com/artbindu) Biswasindhu Mandal [<img width="18px" padding="1px" src="./favicon.ico"/>](https://github.com/artbindu)** 
+**Editor:**  **[<img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/>](https://github.com/artbindu) Biswasindhu Mandal [<img width="18px" padding="1px" src="./favicon.ico"/>](https://artbindu.github.io/artbindu/index.html)** 
 &nbsp; & &nbsp; 
 **[<img width="15px" backgroundColor="black" padding="1px" src="https://cdn.simpleicons.org/github"/>](https://github.com/SubhadeepGiri) Subhadeep Giri**<br>
