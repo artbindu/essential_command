@@ -3,10 +3,17 @@
 
 ## This application used to help Keyboard shortcuts and Basic CMD commands for different OS.
 
+
+## This application used to help Learning Git, ADB, Batch & Shell Script
+
+## It will help you to learning basic database information
+
 </br></br></br></br>
-<div style="margin:auto;padding:1px;max-width:15%">
-    <a href="https://github.com/artbindu" target="_blank"><img align="middle" src="https://artbindu.github.io/artbindu/favicon.ico"></a>
+<!-- <div style="margin:auto;padding:1px;max-width:70px">
+    <a href="https://github.com/artbindu" target="_blank"><img align="middle" src="https://artbindu.github.io/artbindu/favicon.ico"></a> -->
 </div>
 </br></br></br></br></br>
 
-**Editor:**  **[<img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/> Biswasindhu Mandal](https://github.com/artbindu)** &nbsp; & &nbsp; **[<img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/> Subhadeep Giri](https://github.com/SubhadeepGiri)**<br>
+**Editor:**  **[<img width="15px" padding="1px" src="https://cdn.simpleicons.org/github"/>](https://github.com/artbindu) Biswasindhu Mandal [<img width="18px" padding="1px" src="./favicon.ico"/>](https://github.com/artbindu)** 
+&nbsp; & &nbsp; 
+**[<img width="15px" backgroundColor="black" padding="1px" src="https://cdn.simpleicons.org/github"/>](https://github.com/SubhadeepGiri) Subhadeep Giri**<br>
