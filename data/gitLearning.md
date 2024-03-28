@@ -1,6 +1,5 @@
 <!-- # Git Learning -->
 
-
 Command | description
 ------- | --------
 **`1. download code from cloud`** | 
@@ -36,7 +35,7 @@ Command | description
 `git apply <patch_fileName>.patch` <br> `git apply <patch_directory_path>/<patch_file>.patch` | apply patch file
 	 	 
 	 	 
-
+<!-- 
 ## Main Porcelain Commands
 
 Command type | description
@@ -215,4 +214,4 @@ Untitled Section
 Help: 	https://guide.freecodecamp.org/git/ 
 Help1: 	https://git-scm.com/docs/git
 
-```
+``` -->

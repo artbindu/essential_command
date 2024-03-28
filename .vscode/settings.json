@@ -1,0 +1,17 @@
+{
+    "liveServer.settings.port": 12346,
+
+    "files.exclude": {
+        ".github": true,
+        "node_modules": true,
+        ".vscode": true,
+        "icons": true,
+    },
+    "editor.minimap.enabled": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+        "package.json": "package-lock.json",
+        "README.md": "*.md, *.ico, LICENSE, .gitignore"
+    }
+}

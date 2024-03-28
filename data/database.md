@@ -10,3 +10,4 @@ DCL – Data Control Language
 TCL – Transaction Control Language
 
 
+https://www.astera.com/type/blog/a-quick-overview-of-different-types-of-databases/
