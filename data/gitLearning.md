@@ -2,37 +2,53 @@
 
 Command | description
 ------- | --------
-**`1. download code from cloud`** | 
+**`1. download/Clone code from cloud`** | 
 `git clone <clone_url>` | download code from cloud using git
 `git clone <clone_url> <new_repo_name>`| download git repo with custom name
 **`2. Check your branch Name`** |
-`git branch` | check you local branches name
-`git branch -r` | check you local & global branches name
-**`3. switch to another branch`** | 
-`git checkout <branch_name>` | switch to another branch	<br> if it's available into you machine 	 
+`git branch` | check your local branches name
+`git branch -r` | List all remote branches of the current Git
+`git branch -a` |  check your local & global branches name
+**`3. Pull Your changes`** |
+`git fetch origin` | Get all the change history of the origin in your branch
+`git pull origin` <br> or <br> `git pull`|Update the current branch from its origin using a single command
+**`4. switch to another branch`** | 
+`git checkout <branch_name>` | switch to another branch	<br> if it's available into your machine 	 
 `git checkout <commit_id> -b <branch_name>` | create a new branch with a specific commit id and switch that branch<br>do it after clone from `master` branch
-**`4. Git code merge at cloud`** | 
-`git add .` | add you changes	 	 
-`git commit -m "<enter_message>"` | add you commit message 	 	 
+**`5. Git add your changes in cloud`** | 
+`git add .` | add your all changes	 	 
+`git commit -m "<enter_message>"` | add your commit message 	 	 
 `git push origin master` | push at your original branch
-**`5. Rename & Delete you branch`** | 
+`git commit -am "<enter_message>"`| add your existing files changes & commit in a single time
+**`6. Rename & Delete your branch`** | 
 `git branch -m <new_branch_name>` | rename a branch<br>Stay outside of this branch
-`git branch -d <delete_branch_name>` <br>or<br> git branch -D `<delete_branch_name>` | delete local branch<br>Stay outside of this branch
-**`6. Reset or Clean you directory`** | 
+`git branch -d <delete_branch_name>` <br>or<br> `git branch -D <delete_branch_name>` | delete local branch<br>Stay outside of this branch
+`git remote rename origin <new_branch_name>` | Rename the origin remote to new_branch_name  
+**`7. Revert, Reset or Clean your changes or directory`** | 
+`git revert HEAD` | revert the last changes
+`git revert HEAD --no-edit` | revert the latest commit
+`git revert HEAD~1` | revert last two commits
 `git reset` | discard local change 	 
 `git reset --hard` | discard everything permanently<br>not delete new creating file
-`git clean -dfx` | clean you directory like ` | cloud branch<br>Please go to master branch & do it
-**`7. Reset a single file`**|
+`git clean -dfx` | clean your directory like | cloud branch<br>Please go to master branch & do it
+**`8. Reset a single file`**|
 `git checkout @ -- <file_name>.<ext_name>` | reset changes with in file <file_name.ext_name>
-**`8. git configuration`** | 
+**`9. git configuration`** | 
 `git config --list` | All git configuration including userId & password
 `git config --global user.name "<new User name>"` | Add new git configuration list attributes 
-**`9. Patch Creating & apply`** | 
-`git diff` | check all of your local changes<br>If you add new Folder then don't show here
+**`10. get merge branch`**|
+`git merge <other_branch_name>` | merge current branch with branch: 'other_branch_name'
+`git merge origin/master`|Merge the current branch with the branch master, on origin
+**`11. Patch Creating & apply`** | 
+`git diff` | check all of your local changes<br>If your add new Folder then don't show here
 `git diff --name-only` | show list of your local changes file name
 `git diff > <patch_fileName>.patch` | store difference into a folder
 `git diff <fileName_including_path>` > `<patch_fileName>.patch` | create patch file on a specific changes file<br>first run `git diff --name-only` and copy `fileName_including_path`
 `git apply <patch_fileName>.patch` <br> `git apply <patch_directory_path>/<patch_file>.patch` | apply patch file
+**`12. git logs`**|
+`git log --oneline` | Show the log of the repository
+
+
 	 	 
 	 	 
 <!-- 
