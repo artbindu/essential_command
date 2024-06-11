@@ -2,6 +2,9 @@
 
 Command | description
 ------- | --------
+**`0. Basic Git Info`**|
+`git --version` or `git -v` | Check Git Version
+`git --help` or `git -h` | Git help for basic command
 **`1. download/Clone code from cloud`** | 
 `git clone <clone_url>` | download code from cloud using git
 `git clone <clone_url> <new_repo_name>`| download git repo with custom name
@@ -21,6 +24,7 @@ Command | description
 `git commit -m "<enter_message>"` | add your commit message 	 	 
 `git push origin master` | push at your original branch
 `git commit -am "<enter_message>"`| add your existing files changes & commit in a single time
+`git add <filePath_with_Name_01>` | add your changes for particular file(s)
 **`6. Rename & Delete your branch`** | 
 `git branch -m <new_branch_name>` | rename a branch<br>Stay outside of this branch
 `git branch -d <delete_branch_name>` <br>or<br> `git branch -D <delete_branch_name>` | delete local branch<br>Stay outside of this branch
@@ -31,7 +35,7 @@ Command | description
 `git revert HEAD~1` | revert last two commits
 `git reset` | discard local change 	 
 `git reset --hard` | discard everything permanently<br>not delete new creating file
-`git reset --<filePath with fileName>` | Reset particular file 
+`git reset --<filePath_with_Name_01>` | Reset particular file(s) 
 `git clean -dfx` | clean your directory like | cloud branch<br>Please go to master branch & do it
 `git rm <filePath with fileName>` | remove particular file from existing directory
 **`8. Reset a single file`**|
@@ -203,10 +207,6 @@ Helping Link:
 https://alvinalexander.com/git/git-show-change-username-email-address 
 
 ```
-> git config --get-all user.name 
-
-> git config --get-all user.email 
-
 > git status -z -u 
 
 > git symbolic-ref --short HEAD 
@@ -219,13 +219,6 @@ fatal: no upstream configured for branch 'bugs/697123'
 
 > git for-each-ref --format %(refname) %(objectname) --sort -committerdate 
 
-git status
-git add <filePath> <filePath> ... <filePath>	commitFile < uncommitFile
- 	
-git status
-git add -u
-git reset -- <filePath>
-commitFile > uncommitFile 
  
 Untitled Section
 

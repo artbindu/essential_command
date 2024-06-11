@@ -1,8 +1,6 @@
 <!-- # Linux Terminal related commands -->
 
 
-
-
 Command | Description
 ------- | -------------
 `date`| prints the current date time.
