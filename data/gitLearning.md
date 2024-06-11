@@ -16,6 +16,7 @@ Command | description
 `git checkout <branch_name>` | switch to another branch	<br> if it's available into your machine 	 
 `git checkout <commit_id> -b <branch_name>` | create a new branch with a specific commit id and switch that branch<br>do it after clone from `master` branch
 **`5. Git add your changes in cloud`** | 
+`git status` | Check your local changes
 `git add .` | add your all changes	 	 
 `git commit -m "<enter_message>"` | add your commit message 	 	 
 `git push origin master` | push at your original branch
@@ -30,12 +31,17 @@ Command | description
 `git revert HEAD~1` | revert last two commits
 `git reset` | discard local change 	 
 `git reset --hard` | discard everything permanently<br>not delete new creating file
+`git reset --<filePath with fileName>` | Reset particular file 
 `git clean -dfx` | clean your directory like | cloud branch<br>Please go to master branch & do it
+`git rm <filePath with fileName>` | remove particular file from existing directory
 **`8. Reset a single file`**|
 `git checkout @ -- <file_name>.<ext_name>` | reset changes with in file <file_name.ext_name>
 **`9. git configuration`** | 
-`git config --list` | All git configuration including userId & password
-`git config --global user.name "<new User name>"` | Add new git configuration list attributes 
+`git config --list` | Show all Git Configuration
+`git config --global user.name` <br>`git config --global user.email` | Show git config user info
+`git config --global user.name "<new User name>"` <br> `git config --global user.email "<new User mail>"` | Update git config user info
+`git config --global --unset user.name` <br> `git config --global --unset user.email` | Reset git config user info
+`git config --global --edit` | Edit git config
 **`10. get merge branch`**|
 `git merge <other_branch_name>` | merge current branch with branch: 'other_branch_name'
 `git merge origin/master`|Merge the current branch with the branch master, on origin
@@ -53,7 +59,6 @@ Command | description
 	 	 
 <!-- 
 ## Main Porcelain Commands
-
 Command type | description
 ------- | --------
 add                  | Add file contents to the index   
@@ -197,9 +202,6 @@ Helping Link:
 
 https://alvinalexander.com/git/git-show-change-username-email-address 
 
- 
-
- 
 ```
 > git config --get-all user.name 
 

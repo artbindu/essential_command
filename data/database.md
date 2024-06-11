@@ -6,6 +6,7 @@
 There are different type of database structures:
 1. Hierarchical database:
    Follow a ranking order or parent-child relationship to structure data.
+   Example: Computer File System, IBM Information Management System(IMS).
 
 2. Network database:
    It's similar to Hierarchical database. but it connects the child record with various parent records and allowing two-directional relationships.
