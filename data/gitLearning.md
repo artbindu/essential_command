@@ -25,6 +25,7 @@ Command | description
 `git push origin master` | push at your original branch
 `git commit -am "<enter_message>"`| add your existing files changes & commit in a single time
 `git add <filePath_with_Name_01>` | add your changes for particular file(s)
+`git push --set-upstream origin <branch_name>` | Create a new branch in remote repository and commited changes push into that branch. 
 **`6. Rename & Delete your branch`** | 
 `git branch -m <new_branch_name>` | rename a branch<br>Stay outside of this branch
 `git branch -d <delete_branch_name>` <br>or<br> `git branch -D <delete_branch_name>` | delete local branch<br>Stay outside of this branch
