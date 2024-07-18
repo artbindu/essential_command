@@ -1,4 +1,4 @@
-## Stackoverflow Format
+## Stack Overflow Format
 
 ### JS Code solution format:
 ```
@@ -6,7 +6,7 @@
 
 <!-- language: lang-js -->
 
-    // Write JavaScript Code
+    console.log('hello world');
 
 <!-- end snippet -->
 ```
