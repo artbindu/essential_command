@@ -30,6 +30,7 @@ Command | description
 `git branch -m <new_branch_name>` | rename a branch<br>Stay outside of this branch
 `git branch -d <delete_branch_name>` <br>or<br> `git branch -D <delete_branch_name>` | delete local branch<br>Stay outside of this branch
 `git remote rename origin <new_branch_name>` | Rename the origin remote to new_branch_name  
+`git remote prune origin` <br>or<br> `git remote prune origin`| Remove all deleted branches from remote
 **`7. Revert, Reset or Clean your changes or directory`** | 
 `git revert HEAD` | revert the last changes
 `git revert HEAD --no-edit` | revert the latest commit
