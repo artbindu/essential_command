@@ -59,6 +59,7 @@ Command | description
 `git apply <patch_fileName>.patch` <br> `git apply <patch_directory_path>/<patch_file>.patch` | apply patch file
 **`12. git logs`**|
 `git log --oneline` | Show the log of the repository
+`git log -n 1` | Check last commit History
 
 
 	 	 
