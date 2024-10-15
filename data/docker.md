@@ -57,14 +57,9 @@ Delete Docker Images (Forcefully)   | `docker image rm <docker_image_name> -f`
 Delete all Docker Images/Container  | `docker system prune -a`
 Create Docker image (with version)  | `docker build -t <docker_image_name>:<app_version> .`
 Run Docker Images   (with version)  | `docker run --name <docker_container_name> -p <host_port>:<default_app_port> <docker_image_name>:<docker_image_version>`
-Run Docker Compose File : `docker compose up`
 -|-
 View Other Docker Images Command    | `docker image COMMAND`
 View Other Docker Container Command | `docker container COMMAND`
-
-
-
-
 
 ### Docker File Sample
 ```
@@ -80,4 +75,19 @@ View Other Docker Container Command | `docker container COMMAND`
   EXPOSE <Port No>
   # Run project - Mention app run Script
   CMD [<comma seperator command with double quotes>]
+```
+
+#### What is Docker Compose File?
+Run Docker Compose File : `docker compose up`
+
+### Docker Compose Sample File
+```
+  # Docker Services
+  Services:
+    # Docker Image Config
+    img:
+      build: <docker_image_destination>
+      container_name: <docker_image_name>
+      ports:
+        - <host_port>:<default_app_port>
 ```
