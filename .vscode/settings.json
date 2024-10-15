@@ -11,7 +11,7 @@
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
     "explorer.fileNesting.patterns": {
-        "package.json": "package-lock.json",
+        "package.json": "package-lock.json, dockerfile, *.yaml, .dockerignore",
         "README.md": "*.md, *.ico, LICENSE, .gitignore"
     }
 }

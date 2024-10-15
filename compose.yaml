@@ -1,0 +1,6 @@
+services:
+  img:
+    build: .
+    container_name: essential-command
+    ports:
+      - 12345:12345

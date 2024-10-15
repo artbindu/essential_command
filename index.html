@@ -30,34 +30,39 @@
   <div class="fixed-div">
     <ul id="myList">
       <li><a href="#windows">
-              <img align="center" width="20px" style="padding:5px;" 
-                src="https://cdn.worldvectorlogo.com/logos/microsoft-windows-22.svg" />
-              Windows</a>
+          <img align="center" width="20px" style="padding:5px;" 
+            src="https://cdn.worldvectorlogo.com/logos/microsoft-windows-22.svg" />
+          Windows</a>
       </li>
       <li><a href="#windows-it">
-              <img align="center" width="20px" style="padding:5px;" 
-                src="https://cdn.worldvectorlogo.com/logos/terminal-1.svg" />
-              Windows-IT</a>
+          <img align="center" width="20px" style="padding:5px;" 
+            src="https://cdn.worldvectorlogo.com/logos/terminal-1.svg" />
+          Windows-IT</a>
       </li>
       <li><a href="#linux">
-              <img align="center" width="20px" style="padding:5px;" 
-                src="https://cdn.simpleicons.org/linux" />
-              Linux</a>
+          <img align="center" width="20px" style="padding:5px;" 
+            src="https://cdn.simpleicons.org/linux" />
+          Linux</a>
       </li>
       <li><a href="#macos">
-              <img align="center" width="20px" style="padding:5px;" 
-                src="https://cdn.simpleicons.org/apple/white" />
-            MacOs</a>
+          <img align="center" width="20px" style="padding:5px;" 
+            src="https://cdn.simpleicons.org/apple/white" />
+          MacOs</a>
       </li>
       <li><a href="#git">
-              <img align="center" width="20px" style="padding:5px;" 
-                src="https://cdn.simpleicons.org/git/red" />
-            Git</a>
+          <img align="center" width="20px" style="padding:5px;" 
+            src="https://cdn.simpleicons.org/git/red" />
+          Git</a>
       </li>
       <li><a href="#adb">
-              <img align="center" width="20px" style="padding:5px;" 
-                src="https://cdn.simpleicons.org/android/green" />
-            Adb</a>
+          <img align="center" width="20px" style="padding:5px;" 
+            src="https://cdn.simpleicons.org/android/green" />
+          Adb</a>
+      </li>
+      <li><a href="#docker">
+          <img align="center" width="20px" style="padding:5px;" 
+            src="https://cdn.simpleicons.org/docker" />
+          Docker</a>
       </li>
       <!-- <li><a href="#shellscript">
           <img align="center" width="20px" style="padding:5px;" src="https://cdn.simpleicons.org/gnubash/white" />
@@ -124,6 +129,9 @@
     <div class="adb">
       <zero-md class="app" src="./data/adbLearning.md"></zero-md>
     </div>
+    <div class="docker">
+      <zero-md class="app" src="./data/docker.md"></zero-md>
+    </div>
     <div class="batchscript">
       <zero-md class="app" src="./data/batchscript.md"></zero-md>
     </div>
@@ -152,6 +160,7 @@
       windows_it: 'Windows IT CMD Commands',
       git: 'Git Basic Commands',
       adb: 'ADB Basic Commands',
+      docker: 'Docker Basic Commands',
       database: 'Database Basic Learning',
       shellscript: 'Shell Script Commands',
       batchscript: 'Batch Script Commands',
@@ -160,26 +169,26 @@
       about: "About"
     };
 
-        // Show default active option after refresh/first-reload
-        var listItems = document.querySelectorAll('#myList li');
-        var cUrl = window.location.href;
-        var urlKey = cUrl.match(/(?<=\#)[a-z\-]+/gi);
-        if (urlKey) {
-          listItems.forEach((ele, index) => {
-            if (ele.textContent.match(/[a-z\-]+/gi).toString().toLowerCase() === urlKey.toString().toLowerCase()) {
-              var activeOption = ele.textContent ? ele.textContent.replace(/\s+/g, '') : '';
-              console.log('Active option: [Default] ' + activeOption);
-              listItems[index].classList.add('active')
-              showData(activeOption);
-              return;
-            }
-          });
-        } else {
-          var activeOption = listItems[0].textContent ? listItems[0].textContent.replace(/\s+/g, '') : '';
+    // Show default active option after refresh/first-reload
+    var listItems = document.querySelectorAll('#myList li');
+    var cUrl = window.location.href;
+    var urlKey = cUrl.match(/(?<=\#)[a-z\-]+/gi);
+    if (urlKey) {
+      listItems.forEach((ele, index) => {
+        if (ele.textContent.match(/[a-z\-]+/gi).toString().toLowerCase() === urlKey.toString().toLowerCase()) {
+          var activeOption = ele.textContent ? ele.textContent.replace(/\s+/g, '') : '';
           console.log('Active option: [Default] ' + activeOption);
-          listItems[0].classList.add('active')
+          listItems[index].classList.add('active')
           showData(activeOption);
+          return;
         }
+      });
+    } else {
+      var activeOption = listItems[0].textContent ? listItems[0].textContent.replace(/\s+/g, '') : '';
+      console.log('Active option: [Default] ' + activeOption);
+      listItems[0].classList.add('active')
+      showData(activeOption);
+    }
       
 
     listItems.forEach(function (item) {

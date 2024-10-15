@@ -25,12 +25,12 @@ Command | description
 `git push origin master` | push at your original branch
 `git commit -am "<enter_message>"`| add your existing files changes & commit in a single time
 `git add <filePath_with_Name_01>` | add your changes for particular file(s)
-`git push --set-upstream origin <branch_name>` | Create a new branch in remote repository and commited changes push into that branch. 
+`git push --set-upstream origin <branch_name>` | Create a new branch in remote repository and committed changes push into that branch. 
 **`6. Rename & Delete your branch`** | 
 `git branch -m <new_branch_name>` | rename a branch<br>Stay outside of this branch
 `git branch -d <delete_branch_name>` <br>or<br> `git branch -D <delete_branch_name>` | delete local branch<br>Stay outside of this branch
 `git remote rename origin <new_branch_name>` | Rename the origin remote to new_branch_name  
-`git remote prune origin` <br>or<br> `git remote prune origin`| Remove all deleted branches from remote
+`git remote prune origin` <br>or<br> `git fetch --prune`| Remove all deleted branches from remote
 **`7. Revert, Reset or Clean your changes or directory`** | 
 `git revert HEAD` | revert the last changes
 `git revert HEAD --no-edit` | revert the latest commit
