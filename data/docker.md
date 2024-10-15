@@ -65,7 +65,7 @@ View Other Docker Container Command | `docker container COMMAND`
 ```
   # Pull Docker Image/s
   FROM <Docker Image Name>
-  # Mention Project Destinatin if required
+  # Mention Project Destination if required
   WORKDIR <Destination directory name>
   # Copy image from source to destination
   COPY <Source> <Destination>
@@ -74,7 +74,7 @@ View Other Docker Container Command | `docker container COMMAND`
   # Mention App Port 
   EXPOSE <Port No>
   # Run project - Mention app run Script
-  CMD [<comma seperator command with double quotes>]
+  CMD [<comma separator command with double quotes>]
 ```
 
 #### What is Docker Compose File?

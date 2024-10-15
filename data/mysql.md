@@ -1,4 +1,4 @@
-!-- # Database Learning: MySQL --
+<!-- # Database Learning: MySQL -->
 
 ## MySQL Learning
 
@@ -106,7 +106,7 @@ TRUNCATE TABLE table_name;
 
 ```   
 
-9.  TCL (Rransaction Control language) Query:
+9.  TCL (Transaction Control language) Query:
 ```sql
 
 ```   
