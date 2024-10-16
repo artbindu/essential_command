@@ -1,6 +1,9 @@
+version: "2.0.0"
 services:
-  img:
+  app:
+    image: essential-command:2.0.0
     build: .
     container_name: essential-command
     ports:
       - 12345:12345
+    restart: unless-stopped

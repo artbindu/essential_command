@@ -6,7 +6,15 @@
   "scripts": {
     "server": "http-server -p 12345 -c-1 -o",
     "start": "nodemon -x \"npm run server\"",
-    "docker": "docker-compose build && docker compose up"
+    
+    "docker:clean:container": "docker container stop essential-command && docker container rm essential-command",
+    "docker:clean:image": "docker image rm essential-command:2.0.0",
+    "docker:clean": "npm run docker:clean:container && npm run docker:clean:image",
+    "docker:image": "docker build -t essential-command:2.0.0 .",
+    "docker:container": "docker run --name essential-command -p 12345:12345 essential-command:2.0.0",
+    "docker:command": "npm run docker:clean && npm run docker:image && npm run docker:container",
+    "docker:compose": "docker-compose build && docker compose up",
+    "docker:compose-restart": "docker-compose down && docker-compose up -d"
   },
   "node-version": {
     "node": "16.15.1"

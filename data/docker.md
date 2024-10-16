@@ -82,6 +82,7 @@ Command | description
 ------- | --------
 Build Docker Image          | `docker-compose build`
 Start the Docker Container  | `docker compose up`
+Restart Docker Compose      | `docker-compose down && docker-compose up -d`
 
 ### Docker Compose Sample File
 ```
