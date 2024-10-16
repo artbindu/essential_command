@@ -78,7 +78,10 @@ View Other Docker Container Command | `docker container COMMAND`
 ```
 
 #### What is Docker Compose File?
-Run Docker Compose File : `docker compose up`
+Command | description
+------- | --------
+Build Docker Image          | `docker-compose build`
+Start the Docker Container  | `docker compose up`
 
 ### Docker Compose Sample File
 ```

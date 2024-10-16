@@ -6,7 +6,7 @@
   "scripts": {
     "server": "http-server -p 12345 -c-1 -o",
     "start": "nodemon -x \"npm run server\"",
-    "docker": "docker compose up"
+    "docker": "docker-compose build && docker compose up"
   },
   "node-version": {
     "node": "16.15.1"
