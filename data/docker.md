@@ -44,14 +44,13 @@ version             | `docker --version`
 [Pull Docker Images](https://hub.docker.com)  | `docker pull <docker_image_version>` <br> <br> Node.js ≡ `docker pull node:lts-slim` <br> Python ≡ `docker pull python`
 Run Docker Image |`doker run -it <docker_image_name>` <br>or<br> `docker run -it <docker_image_name> /bin/bash` <br><br> Node.js ≡ `docker run -it node:lts-slim /bin/bash` <br> Python ≡ `docker run -it python /bin/bash`
 Create Docker file| `touch dockerfile` <br> need to install `touch-cli` globally
-Create Docker Images | `docker build -t <docker_image_name_in_lowercase> .` <br> Run this with in your application directory where you crate the docker file
-Show all Docker Containers  | `docker ps -a`
 Show all Docker Images      | `docker images`
-Run Docker Images           | `docker run --name <docker_container_name> -p <host_port>:<default_app_port> <docker_image_name>`
+Show all Docker Containers  | `docker ps -a`
+Create Docker Images | `docker build -t <docker_image_name_in_lowercase> .` <br> Run this with in your application directory where you crate the docker file
+Run Docker Images / Create Docker Container | `docker run --name <docker_container_name> -p <host_port>:<default_app_port> <docker_image_name>`
 Start Docker Container      | `docker container start <docker_image_name>`
 Stop Docker Container       | `docker container stop <docker_image_name>`
 Delete Docker Containers             |  `docker container rm <docker_container_name>`
-Delete Docker Images                 | `docker image rm <docker_image_name>` 
 Delete Docker Containers (Forcefully)|  `docker container rm <docker_container_name> -f`
 Delete Docker Images (Forcefully)   | `docker image rm <docker_image_name> -f`
 Delete all Docker Images/Container  | `docker system prune -a`
@@ -81,8 +80,11 @@ View Other Docker Container Command | `docker container COMMAND`
 Command | description
 ------- | --------
 Build Docker Image          | `docker-compose build`
-Start the Docker Container  | `docker compose up`
-Restart Docker Compose      | `docker-compose down && docker-compose up -d`
+Start Docker Container      | `docker compose up -d`
+Stop Docker Container       | `docker-compose down` 
+Restart Docker Container    | `docker-compose down && docker-compose up -d`
+Create Docker Image & Start Container    | `docker-compose build && docker-compose up -d`
+Rebuild Docker Image & restart Container | `docker-compose down && docker-compose build && docker-compose up -d`
 
 ### Docker Compose Sample File
 ```

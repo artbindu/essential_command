@@ -22,6 +22,12 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'UA-66946548-3');
+    window.onload= (event) => {
+      setTimeout(() => {
+        // document.getElementsByClassName("content")[0].style.backgroundColor = 'red';
+        document.getElementsByClassName("content")[0].style.width = `${Math.ceil(window.innerWidth*50/100)}px`;
+      }, 500);
+    }
   </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
