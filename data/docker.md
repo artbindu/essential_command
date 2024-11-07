@@ -45,7 +45,8 @@ version             | `docker --version`
 Run Docker Image |`doker run -it <docker_image_name>` <br>or<br> `docker run -it <docker_image_name> /bin/bash` <br><br> Node.js ≡ `docker run -it node:lts-slim /bin/bash` <br> Python ≡ `docker run -it python /bin/bash`
 Create Docker file| `touch dockerfile` <br> need to install `touch-cli` globally
 Show all Docker Images      | `docker images`
-Show all Docker Containers  | `docker ps -a`
+Show all Docker Containers Info | `docker ps -a`
+Show Running Docker Containers Info  | `docker ps`
 Create Docker Images | `docker build -t <docker_image_name_in_lowercase> .` <br> Run this with in your application directory where you crate the docker file
 Run Docker Images / Create Docker Container | `docker run --name <docker_container_name> -p <host_port>:<default_app_port> <docker_image_name>`
 Start Docker Container      | `docker container start <docker_image_name>`

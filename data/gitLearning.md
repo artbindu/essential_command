@@ -58,8 +58,11 @@ Command | description
 `git diff <fileName_including_path>` > `<patch_fileName>.patch` | create patch file on a specific changes file<br>first run `git diff --name-only` and copy `fileName_including_path`
 `git apply <patch_fileName>.patch` <br> `git apply <patch_directory_path>/<patch_file>.patch` | apply patch file
 **`12. git logs`**|
-`git log --oneline` | Show the log of the repository
+`git log --online` | Show the log of the repository
 `git log -n 1` | Check last commit History
+**`13. git rename directory & file`**|
+`git mv <old_name> <new_name>` | Rename Directory/File Name (If directory/File Name is different)
+`git mv <OLD_name> temp` <br> `git mv temp <old_name>`| Case-Sensitive Directory/File Name
 
 
 	 	 
