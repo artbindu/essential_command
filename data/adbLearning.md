@@ -2,10 +2,13 @@
 
 [Command](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands) | Description
 ------- | --------
+`adb --version` | View adb version
 `adb devices` | see list of connected devices through adb
 `adb connect <ip>:<port>` | connect devices through ip
 `adb connect <device_id>` | connect devices through USB
 `adb kill-server`| disconnect all connected devices
+`adb start-server` | adb restart server
+`adb usb` | Restarting the USB Mode
 `adb logcat` | show device log
 `adb logcat -c` | clear all logs in adb terminal
 `adb logcat > <fileName>.<extension>` | store device log into a file
@@ -14,7 +17,13 @@
 `adb -s <device_id or ip> uninstall <native_app_id>` | Uninstall the device app
 `adb shell pm uninstall -k --user 0 <package name>` | Forcefully uninstall
 `adb -s <device_id/only_ip> reboot` | restart device
-`pm list packages \| grep <OEM/Carrier/App Name>` | adb show app list under a specific packages
+`adb shell pm list packages` | Show all install packages in your system
+`adb shell pm list packages \| findstr <OEM/Carrier/App Name>` <br>or<br> `adb shell pm list packages \| grep <OEM/Carrier/App Name>` | adb show app list under a specific packages
+`adb shell getprop` | get connected system properties
+`adb shell getprop ro.build.version.release`| Get Device Android version
+`adb shell getprop ro.build.version.sdk`| Get Device SDK version
+`adb shell getprop ro.serialno` | get serial number
+`adb shell getprop \| findstr ro.product` | Get all product information
 `adb shell input text "<input_text>"` | Input text from remote device
 `adb remount`| put `/system` partition in writable mode. By default `/system` is only readable. It could only be done on rooted device.
 Media Configuration |
