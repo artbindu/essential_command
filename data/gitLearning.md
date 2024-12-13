@@ -37,7 +37,7 @@ Command | description
 `git revert HEAD~1` | revert last two commits
 `git reset` | discard local change 	 
 `git reset --hard` | discard everything permanently<br>not delete new creating file
-`git reset --<filePath_with_Name_01>` | Reset particular file(s) 
+`git reset --<filePath_with_Name_01>` <br>or<br> `git restore <filePath_with_Name_01>` | Reset particular file(s) 
 `git clean -dfx` | clean your directory like | cloud branch<br>Please go to master branch & do it
 `git rm <filePath with fileName>` | remove particular file from existing directory
 **`8. Reset a single file`**|
@@ -63,9 +63,14 @@ Command | description
 **`13. git rename directory & file`**|
 `git mv <old_name> <new_name>` | Rename Directory/File Name (If directory/File Name is different)
 `git mv <OLD_name> temp` <br> `git mv temp <old_name>`| Case-Sensitive Directory/File Name
+**`14. git Proxy Settings`**|
+`git config --global http.proxy`| View `HTTP` proxy config
+`git config --global https.proxy`| View `HTTPS` proxy config
+`git config --global http.proxy http://proxyUsername:proxyPassword@proxyServerName:port` <br> `git config --global http.proxy http://proxyUsername@proxyServerName:port`| Set `HTTP` proxy
+`git config --global https.proxy https://proxyUsername:proxyPassword@proxyServerName:port` <br> `git config --global https.proxy http://proxyUsername@proxyServerName:port`| Set `HTTPS` proxy
+`git config -–global –-unset http.proxy`| Unset `HTTP` proxy
+`git config -–global –-unset https.proxy`| Unset `HTTPS` proxy
 
-
-	 	 
 	 	 
 <!-- 
 ## Main Porcelain Commands
